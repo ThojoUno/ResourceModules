@@ -155,7 +155,7 @@ runs:
             Location             = $location
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
-            AdditionalParameters = @{ ${{ env.tags }} }
+            AdditionalParameters = @{ tags=${{ env.tags }} }
           }
 
           # Handle additional parameters
@@ -212,7 +212,7 @@ runs:
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
             DoNotThrow           = $true
-            AdditionalParameters = @{ tags:${{ env.tags }} }
+            AdditionalParameters = @{ tags=${{ env.tags }} }
           }
 
           # Handle additional parameters
