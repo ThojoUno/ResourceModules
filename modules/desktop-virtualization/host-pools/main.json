@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "11596594883659659247"
+      "version": "0.18.4.5664",
+      "templateHash": "8022860912421276738"
     },
     "name": "Azure Virtual Desktop (AVD) Host Pools",
     "description": "This module deploys an Azure Virtual Desktop (AVD) Host Pool.",
@@ -214,7 +214,7 @@
         "Scheduled"
       ],
       "metadata": {
-        "description": "Optional. Enable scheduled agent updates. Default means agent updates will automatically be installed by AVD when they become available."
+        "description": "Optional. Enable scheduled agent updates, Default means agent updates will automatically be installed by AVD when they become available."
       }
     },
     "agentUpdateMaintenanceWindowHour": {
@@ -239,7 +239,7 @@
         "Saturday"
       ],
       "metadata": {
-        "description": "Optional. Update hour for scheduled agent updates."
+        "description": "Optional. Update day for scheduled agent updates."
       }
     },
     "agentUpdateMaintenanceWindows": {
@@ -478,8 +478,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "10241186313653123794"
+              "version": "0.18.4.5664",
+              "templateHash": "14279396732857224845"
             }
           },
           "parameters": {

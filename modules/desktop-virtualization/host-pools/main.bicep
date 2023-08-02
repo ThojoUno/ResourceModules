@@ -101,7 +101,7 @@ param startVMOnConnect bool = false
 @sys.description('Optional. Array of role assignment objects that contain the \'roleDefinitionIdOrName\' and \'principalIds\' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or its fully qualified ID in the following format: \'/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11\'.')
 param roleAssignments array = []
 
-@sys.description('Optional. Enable scheduled agent updates. Default means agent updates will automatically be installed by AVD when they become available.')
+@sys.description('Optional. Enable scheduled agent updates, Default means agent updates will automatically be installed by AVD when they become available.')
 @allowed([
   'Default'
   'Scheduled'
@@ -113,7 +113,7 @@ param agentUpdateType string = 'Default'
 @maxValue(23)
 param agentUpdateMaintenanceWindowHour int = 22
 
-@sys.description('Optional. Update hour for scheduled agent updates.')
+@sys.description('Optional. Update day for scheduled agent updates.')
 @allowed([
   'Sunday'
   'Monday'
