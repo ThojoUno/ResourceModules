@@ -135,7 +135,6 @@ runs:
           $location = '${{ inputs.location }}'
           $subscriptionId = '${{ inputs.subscriptionId }}'
           $managementGroupId = '${{ inputs.managementGroupId }}'
-          $tags = '${{ inputs.tags }}'
 
           # Resolve template file path
           $moduleTestFilePath = Join-Path $env:GITHUB_WORKSPACE '${{ inputs.templateFilePath }}'
@@ -156,7 +155,7 @@ runs:
             Location             = $location
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
-            AdditionalParameters = @{}
+            AdditionalParameters = @{ ${{ env.tags }} }
           }
 
           # Handle additional parameters
@@ -213,7 +212,7 @@ runs:
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
             DoNotThrow           = $true
-            AdditionalParameters = @{}
+            AdditionalParameters = @{ ${{ env.tags }} }
           }
 
           # Handle additional parameters
