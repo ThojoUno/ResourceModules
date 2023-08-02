@@ -212,7 +212,7 @@ runs:
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
             DoNotThrow           = $true
-            AdditionalParameters = @{ ${{ env.tags }} }
+            AdditionalParameters = @{ tags:${{ env.tags }} }
           }
 
           # Handle additional parameters
