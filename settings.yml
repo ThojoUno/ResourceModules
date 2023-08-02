@@ -44,7 +44,9 @@ variables:
   # Deployment validation #
   # --------------------- #
 
-  location: 'westeurope' # The default location to test deploy resources to
+  location: 'centralus' # The default location to test deploy resources to
+  # Required LunaviLab tags
+  tags: '@{"Environment"="Lab";"Expiry Date"="12/31/2023";"Business Unit"="Cloud Enablement";"Owner"="Joe Thompson";"DeployedBy"="Lunavi"}'
 
   #############################
   ##   Publishing settings   ##
