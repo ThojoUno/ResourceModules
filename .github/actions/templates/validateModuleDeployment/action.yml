@@ -43,6 +43,9 @@ inputs:
   customTokens:
     description: 'Additional parameter file token pairs in json format. e.g. {"tokenName":"tokenValue"}'
     required: false
+  tags:
+    description: 'Allow the use of Azure tags on deployment validation'
+    required: false
   removeDeployment:
     description: 'Set "true" to set module up for removal'
     default: 'true'
@@ -135,6 +138,7 @@ runs:
           $location = '${{ inputs.location }}'
           $subscriptionId = '${{ inputs.subscriptionId }}'
           $managementGroupId = '${{ inputs.managementGroupId }}'
+          $tags = '${{ inputs.tags }}'
 
           # Resolve template file path
           $moduleTestFilePath = Join-Path $env:GITHUB_WORKSPACE '${{ inputs.templateFilePath }}'
@@ -155,6 +159,7 @@ runs:
             Location             = $location
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
+            tags                 = $tags
             AdditionalParameters = @{}
           }
 
@@ -191,6 +196,7 @@ runs:
           $location = '${{ inputs.location }}'
           $subscriptionId = '${{ inputs.subscriptionId }}'
           $managementGroupId = '${{ inputs.managementGroupId }}'
+          $tags = '${{ inputs.tags }}'
 
           # Resolve template file path
           $moduleTestFilePath = Join-Path $env:GITHUB_WORKSPACE '${{ inputs.templateFilePath }}'
@@ -211,6 +217,7 @@ runs:
             Location             = $location
             SubscriptionId       = $subscriptionId
             ManagementGroupId    = $managementGroupId
+            tags                 = $tags
             DoNotThrow           = $true
             AdditionalParameters = @{}
           }
