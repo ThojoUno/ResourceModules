@@ -259,6 +259,7 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
     name: 'rrgmin001'
     // Non-required parameters
     enableDefaultTelemetry: '<enableDefaultTelemetry>'
+    tags: '<tags>'
   }
 }
 ```
@@ -282,6 +283,9 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
     // Non-required parameters
     "enableDefaultTelemetry": {
       "value": "<enableDefaultTelemetry>"
+    },
+    "tags": {
+      "value": "<tags>"
     }
   }
 }
