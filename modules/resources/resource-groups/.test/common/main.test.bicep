@@ -52,6 +52,7 @@ module testDeployment '../../main.bicep' = {
   params: {
     enableDefaultTelemetry: enableDefaultTelemetry
     name: '${namePrefix}${serviceShort}001'
+    tags: tags
     lock: 'CanNotDelete'
     roleAssignments: [
       {
@@ -62,9 +63,5 @@ module testDeployment '../../main.bicep' = {
         principalType: 'ServicePrincipal'
       }
     ]
-    tags: {
-      Environment: 'Non-Prod'
-      Role: 'DeploymentValidation'
-    }
   }
 }
