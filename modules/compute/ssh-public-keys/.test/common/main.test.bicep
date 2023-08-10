@@ -21,6 +21,9 @@ param enableDefaultTelemetry bool = true
 @description('Optional. A token to inject into the name of each resource.')
 param namePrefix string = '[[namePrefix]]'
 
+@description('Optional. Some environments require tagging.')
+param tags object = {}
+
 // ============ //
 // Dependencies //
 // ============ //
@@ -30,6 +33,7 @@ param namePrefix string = '[[namePrefix]]'
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: resourceGroupName
   location: location
+  tags: tags
 }
 
 module nestedDependencies 'dependencies.bicep' = {

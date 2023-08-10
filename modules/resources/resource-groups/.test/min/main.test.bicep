@@ -13,6 +13,9 @@ param enableDefaultTelemetry bool = true
 @description('Optional. A token to inject into the name of each resource.')
 param namePrefix string = '[[namePrefix]]'
 
+@description('Optional. Some environments require tagging.')
+param tags object = {}
+
 // ============== //
 // Test Execution //
 // ============== //
@@ -22,5 +25,6 @@ module testDeployment '../../main.bicep' = {
   params: {
     enableDefaultTelemetry: enableDefaultTelemetry
     name: '${namePrefix}${serviceShort}001'
+    tags: tags
   }
 }
