@@ -41,6 +41,7 @@ module nestedDependencies 'dependencies.bicep' = {
   params: {
     virtualNetworkName: 'dep-${namePrefix}-vnet-${serviceShort}'
     publicIPName: 'dep-${namePrefix}-pip-${serviceShort}'
+    managedIdentityName: 'dep-${namePrefix}-msi-${serviceShort}'
   }
 }
 
@@ -61,6 +62,19 @@ module testDeployment '../../main.bicep' = {
         publicIPAddressResourceId: nestedDependencies.outputs.publicIPResourceId
       }
     ]
+    azureSkuTier: 'Basic'
+    managementIPAddressObject: {
+      publicIPAllocationMethod: 'Static'
+      roleAssignments: [
+        {
+          roleDefinitionIdOrName: 'Reader'
+          principalIds: [
+            nestedDependencies.outputs.managedIdentityPrincipalId
+          ]
+          principalType: 'ServicePrincipal'
+        }
+      ]
+    }
     tags: {
       Environment: 'Non-Prod'
       Role: 'DeploymentValidation'

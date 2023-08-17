@@ -160,7 +160,7 @@ module testDeployment '../../main.bicep' = {
       automaticSnapshotPolicyEnabled: true
       containerDeleteRetentionPolicyEnabled: true
       containerDeleteRetentionPolicyDays: 10
-      deleteRetentionPolicy: true
+      deleteRetentionPolicyEnabled: true
       deleteRetentionPolicyDays: 9
     }
     fileServices: {
