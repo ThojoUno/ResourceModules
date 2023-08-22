@@ -190,10 +190,7 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
         roleDefinitionIdOrName: 'Reader'
       }
     ]
-    tags: {
-      Environment: 'Non-Prod'
-      Role: 'DeploymentValidation'
-    }
+    tags: '<tags>'
   }
 }
 ```
@@ -233,10 +230,7 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
       ]
     },
     "tags": {
-      "value": {
-        "Environment": "Non-Prod",
-        "Role": "DeploymentValidation"
-      }
+      "value": "<tags>"
     }
   }
 }
@@ -259,6 +253,7 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
     name: 'rrgmin001'
     // Non-required parameters
     enableDefaultTelemetry: '<enableDefaultTelemetry>'
+    tags: '<tags>'
   }
 }
 ```
@@ -282,6 +277,9 @@ module resourceGroups './resources/resource-groups/main.bicep' = {
     // Non-required parameters
     "enableDefaultTelemetry": {
       "value": "<enableDefaultTelemetry>"
+    },
+    "tags": {
+      "value": "<tags>"
     }
   }
 }
