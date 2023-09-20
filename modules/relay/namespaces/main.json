@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "18363231390750334097"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "16285134298308048424"
+    },
+    "name": "Relay Namespaces",
+    "description": "This module deploys a Relay Namespace",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "name": {
@@ -304,9 +307,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "9763854483927913724"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "4038591800829101175"
+            },
+            "name": "Relay Namespace Authorization Rules",
+            "description": "This module deploys a Relay Namespace Authorization Rule.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -423,9 +429,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "2429764380806740500"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "18313553024057862553"
+            },
+            "name": "Relay Namespace Network Rules Sets",
+            "description": "This module deploys a Relay Namespace Network Rule Set.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -563,9 +572,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "7847404424450621571"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "9847423764193397244"
+            },
+            "name": "Relay Namespace Hybrid Connections",
+            "description": "This module deploys a Relay Namespace Hybrid Connection.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -727,9 +739,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "17231058756777007644"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "18061747317589197292"
+                    },
+                    "name": "Hybrid Connection Authorization Rules",
+                    "description": "This module deploys a Hybrid Connection Authorization Rule.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "name": {
@@ -857,8 +872,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "232914041275606585"
+                      "version": "0.18.4.5664",
+                      "templateHash": "11466554200576955263"
                     }
                   },
                   "parameters": {
@@ -1042,9 +1057,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "1187887494213101123"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "9222744447264769186"
+            },
+            "name": "Relay Namespace WCF Relays",
+            "description": "This module deploys a Relay Namespace WCF Relay.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -1226,9 +1244,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "2947511199808673632"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "14520368675263070060"
+                    },
+                    "name": "WCF Relay Authorization Rules",
+                    "description": "This module deploys a WCF Relay Authorization Rule.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "name": {
@@ -1356,8 +1377,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "18065734222254333164"
+                      "version": "0.18.4.5664",
+                      "templateHash": "4497277972854191554"
                     }
                   },
                   "parameters": {
@@ -1552,9 +1573,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "11825715538543749879"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "8413390548061663813"
+            },
+            "name": "Private Endpoints",
+            "description": "This module deploys a Private Endpoint.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "name": {
@@ -1684,7 +1708,7 @@
             },
             {
               "type": "Microsoft.Network/privateEndpoints",
-              "apiVersion": "2022-07-01",
+              "apiVersion": "2023-05-01",
               "name": "[parameters('name')]",
               "location": "[parameters('location')]",
               "tags": "[parameters('tags')]",
@@ -1749,9 +1773,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "12684511314187066258"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "13364313939069632186"
+                    },
+                    "name": "Private Endpoint Private DNS Zone Groups",
+                    "description": "This module deploys a Private Endpoint Private DNS Zone Group.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "privateEndpointName": {
@@ -1884,8 +1911,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "18055161250379920591"
+                      "version": "0.18.4.5664",
+                      "templateHash": "11724106538771429164"
                     }
                   },
                   "parameters": {
@@ -2055,7 +2082,7 @@
               "metadata": {
                 "description": "The location the resource was deployed into."
               },
-              "value": "[reference(resourceId('Microsoft.Network/privateEndpoints', parameters('name')), '2022-07-01', 'full').location]"
+              "value": "[reference(resourceId('Microsoft.Network/privateEndpoints', parameters('name')), '2023-05-01', 'full').location]"
             }
           }
         }
@@ -2098,8 +2125,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "15987440490735040087"
+              "version": "0.18.4.5664",
+              "templateHash": "6713211833469375220"
             }
           },
           "parameters": {

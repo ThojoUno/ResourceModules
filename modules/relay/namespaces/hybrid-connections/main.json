@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "7847404424450621571"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "9847423764193397244"
+    },
+    "name": "Relay Namespace Hybrid Connections",
+    "description": "This module deploys a Relay Namespace Hybrid Connection.",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "namespaceName": {
@@ -168,9 +171,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "17231058756777007644"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "18061747317589197292"
+            },
+            "name": "Hybrid Connection Authorization Rules",
+            "description": "This module deploys a Hybrid Connection Authorization Rule.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "name": {
@@ -298,8 +304,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "232914041275606585"
+              "version": "0.18.4.5664",
+              "templateHash": "11466554200576955263"
             }
           },
           "parameters": {
