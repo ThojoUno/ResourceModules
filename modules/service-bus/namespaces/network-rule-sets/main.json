@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "11341933962050615676"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "7683827999293402466"
+    },
+    "name": "Service Bus Namespace Network Rule Sets",
+    "description": "This module deploys a ServiceBus Namespace Network Rule Set.",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "namespaceName": {

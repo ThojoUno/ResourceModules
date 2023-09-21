@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "17555846329866342390"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "8045244600679717717"
+    },
+    "name": "Service Bus Namespace Queue",
+    "description": "This module deploys a Service Bus Namespace Queue.",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "namespaceName": {
@@ -250,9 +253,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "3929679930039405498"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "3004769830338847092"
+            },
+            "name": "Service Bus Namespace Queue Authorization Rules",
+            "description": "This module deploys a Service Bus Namespace Queue Authorization Rule.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "name": {
@@ -380,8 +386,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "7877329706197358997"
+              "version": "0.18.4.5664",
+              "templateHash": "11451783893313319107"
             }
           },
           "parameters": {

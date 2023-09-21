@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "17158630928383768350"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "11569322676855023497"
+    },
+    "name": "Service Bus Namespaces",
+    "description": "This module deploys a Service Bus Namespace.",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "name": {
@@ -379,9 +382,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "3980247914866382538"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "10138212007060696289"
+            },
+            "name": "Service Bus Namespace Authorization Rules",
+            "description": "This module deploys a Service Bus Namespace Authorization Rule.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -498,9 +504,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "10239561254903489880"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "370131205990922223"
+            },
+            "name": "Service Bus Namespace Disaster Recovery Configs",
+            "description": "This module deploys a Service Bus Namespace Disaster Recovery Config",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -624,9 +633,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "9634923970896018925"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "240336548474430052"
+            },
+            "name": "Service Bus Namespace Migration Configuration",
+            "description": "This module deploys a Service Bus Namespace Migration Configuration.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -740,9 +752,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "11341933962050615676"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "7683827999293402466"
+            },
+            "name": "Service Bus Namespace Network Rule Sets",
+            "description": "This module deploys a ServiceBus Namespace Network Rule Set.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -918,9 +933,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "17555846329866342390"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "8045244600679717717"
+            },
+            "name": "Service Bus Namespace Queue",
+            "description": "This module deploys a Service Bus Namespace Queue.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -1164,9 +1182,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "3929679930039405498"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "3004769830338847092"
+                    },
+                    "name": "Service Bus Namespace Queue Authorization Rules",
+                    "description": "This module deploys a Service Bus Namespace Queue Authorization Rule.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "name": {
@@ -1294,8 +1315,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "7877329706197358997"
+                      "version": "0.18.4.5664",
+                      "templateHash": "11451783893313319107"
                     }
                   },
                   "parameters": {
@@ -1485,9 +1506,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "4304998500028939273"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "2285912538394906274"
+            },
+            "name": "Service Bus Namespace Topic",
+            "description": "This module deploys a Service Bus Namespace Topic.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "namespaceName": {
@@ -1723,9 +1747,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "12238459450385505191"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "7217282979160109815"
+                    },
+                    "name": "Service Bus Namespace Topic Authorization Rules",
+                    "description": "This module deploys a Service Bus Namespace Topic Authorization Rule.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "name": {
@@ -1853,8 +1880,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "18279135895049473482"
+                      "version": "0.18.4.5664",
+                      "templateHash": "7924225930514461698"
                     }
                   },
                   "parameters": {
@@ -2048,9 +2075,12 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "11825715538543749879"
-            }
+              "version": "0.18.4.5664",
+              "templateHash": "8413390548061663813"
+            },
+            "name": "Private Endpoints",
+            "description": "This module deploys a Private Endpoint.",
+            "owner": "Azure/module-maintainers"
           },
           "parameters": {
             "name": {
@@ -2180,7 +2210,7 @@
             },
             {
               "type": "Microsoft.Network/privateEndpoints",
-              "apiVersion": "2022-07-01",
+              "apiVersion": "2023-05-01",
               "name": "[parameters('name')]",
               "location": "[parameters('location')]",
               "tags": "[parameters('tags')]",
@@ -2245,9 +2275,12 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "12684511314187066258"
-                    }
+                      "version": "0.18.4.5664",
+                      "templateHash": "13364313939069632186"
+                    },
+                    "name": "Private Endpoint Private DNS Zone Groups",
+                    "description": "This module deploys a Private Endpoint Private DNS Zone Group.",
+                    "owner": "Azure/module-maintainers"
                   },
                   "parameters": {
                     "privateEndpointName": {
@@ -2380,8 +2413,8 @@
                   "metadata": {
                     "_generator": {
                       "name": "bicep",
-                      "version": "0.19.5.34762",
-                      "templateHash": "18055161250379920591"
+                      "version": "0.18.4.5664",
+                      "templateHash": "11724106538771429164"
                     }
                   },
                   "parameters": {
@@ -2551,7 +2584,7 @@
               "metadata": {
                 "description": "The location the resource was deployed into."
               },
-              "value": "[reference(resourceId('Microsoft.Network/privateEndpoints', parameters('name')), '2022-07-01', 'full').location]"
+              "value": "[reference(resourceId('Microsoft.Network/privateEndpoints', parameters('name')), '2023-05-01', 'full').location]"
             }
           }
         }
@@ -2594,8 +2627,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.19.5.34762",
-              "templateHash": "15951430180432079946"
+              "version": "0.18.4.5664",
+              "templateHash": "2815351803418998382"
             }
           },
           "parameters": {

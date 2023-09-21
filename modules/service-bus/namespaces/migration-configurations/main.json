@@ -4,9 +4,12 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.19.5.34762",
-      "templateHash": "9634923970896018925"
-    }
+      "version": "0.18.4.5664",
+      "templateHash": "240336548474430052"
+    },
+    "name": "Service Bus Namespace Migration Configuration",
+    "description": "This module deploys a Service Bus Namespace Migration Configuration.",
+    "owner": "Azure/module-maintainers"
   },
   "parameters": {
     "namespaceName": {
