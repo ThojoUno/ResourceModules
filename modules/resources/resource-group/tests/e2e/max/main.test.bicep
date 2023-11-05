@@ -55,15 +55,10 @@ module testDeployment '../../../main.bicep' = {
   params: {
     enableDefaultTelemetry: enableDefaultTelemetry
     name: '${namePrefix}${serviceShort}001'
-<<<<<<< HEAD:modules/resources/resource-groups/.test/common/main.test.bicep
-    tags: tags
-    lock: 'CanNotDelete'
-=======
     lock: {
       kind: 'CanNotDelete'
       name: 'myCustomLockName'
     }
->>>>>>> 874e27809038cbfd96becfdbf1b4649a85f3a2a4:modules/resources/resource-group/tests/e2e/max/main.test.bicep
     roleAssignments: [
       {
         roleDefinitionIdOrName: 'Reader'
@@ -71,13 +66,10 @@ module testDeployment '../../../main.bicep' = {
         principalType: 'ServicePrincipal'
       }
     ]
-<<<<<<< HEAD:modules/resources/resource-groups/.test/common/main.test.bicep
-=======
     tags: {
       'hidden-title': 'This is visible in the resource name'
       Environment: 'Non-Prod'
       Role: 'DeploymentValidation'
     }
->>>>>>> 874e27809038cbfd96becfdbf1b4649a85f3a2a4:modules/resources/resource-group/tests/e2e/max/main.test.bicep
   }
 }
